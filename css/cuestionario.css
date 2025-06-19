@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1b2342;
+    color: aliceblue;
+    margin: 0px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #060b1f;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px 10px 5px 10px;
+}
+
+.nav > div > form > button {
+    background-color: #060b1f;
+    border: none;
+}
+
+.btn {
+    padding: 10px 15px 10px 15px;
+    background-color: #6c7a89;
+    border: none;
+    color:aliceblue;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.nav > h1 {
+    padding-right: 147px;
+}
+
+.encuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pregunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.respuestas {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.respuesta {
+    display: flex;
+    width: 250px;
+}
+
+.respuesta > button {
+    background-color: #6c7a89;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.logo {
+    width: 180px;
+    height: 80px;
+}

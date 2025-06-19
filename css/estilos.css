@@ -1,0 +1,465 @@
+/* --- PARA TODO ---*/
+/*
+*{
+    outline: 2px dotted black;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS MÓDULOS ------------------------------------------------------------------------------- */
+
+#organizacion{
+    background-color: #e3d8d4;
+}
+#volver{
+    width: 35px;
+    height: 35px;
+    border-radius: 80px;
+    background: #d89c6c;
+    cursor: pointer;
+}
+
+.titulo1{
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    justify-content: center;
+    color: #152540;
+}
+.container-org nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#calendar{
+    margin-right: 50px;
+    width: 35px;
+    height: 35px;
+    border-radius: 80px;
+    background: #d89c6c;
+    cursor: pointer;
+}
+
+/*organización */
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.panel-izquierda{
+    height: 500px;  
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+.panel-izquierda img{
+    margin-top: 20px;
+    align-self: center;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.panel-izquierda p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: justify;
+}
+.panel-derecha{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    gap: 10px;
+}
+.superior{
+    display: flex;
+    flex: 1;
+    width: 750px;
+    justify-content: space-between;
+}
+.superior div{
+    width: 350px;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3e5375;
+    gap: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+.superior div img{
+    width: 90%;
+    height: 90%;
+}
+.miVideo {
+    width: 90%;
+    height: 90%;
+
+}
+.inferior{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+.inferior-superior{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 700px;
+}
+.tips{
+    width: 100%;
+    height: 100%;
+}
+.reto{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+.reto h3{
+    text-align: start;
+    color: black;
+    margin-top: 10px;
+}
+.reto p{
+    text-align: justify;
+}
+.tips h3{
+    text-align: start;
+    margin: 10px;
+    color: black;
+}
+.inferior h4{
+    text-align: center;
+    justify-self: center;
+    margin: 10px;
+}
+.tips ul{
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: disc;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.links ul li a{
+    color: black;
+    cursor: pointer;
+}
+.barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 60px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: #00334e;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.item {
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item {
+    cursor: pointer;
+}
+.oculto {
+    position: fixed;
+    bottom: 60px;
+    background: #f1f1f1;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: normal;
+    width: 200px;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.item:hover .oculto {
+    display: block;
+}
+
+
+/* ESTILOS PRINCIPAL ---------------------------------------------------------------------------- */
+
+.encabezado{
+    background-color: #060b1f;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.padre{
+    display: flex;
+    justify-content: space-evenly;
+    height: 700px;
+    background-color: #e3d8d4;
+}
+.encabezado img{
+    width: 180px;
+    height: 80px;
+    margin-left: 50px;
+}
+.target1{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 120px;
+    padding-left: 50px;
+    padding-right: 40px;
+    background-color: #060b1f;
+    border: solid black 2px;
+}
+.target1 h2{
+    color: #ede8e4;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+.target1 p{
+    color: #ede8e4;
+}
+.target2{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 120px;
+    padding-left: 50px;
+    padding-right: 40px;
+    background-color: #060b1f;
+    border: solid black 2px;
+}
+.target2 h2{
+    color: #ede8e4;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+.target2 p{
+    color: #ede8e4;
+}
+#A{
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ede8e4;
+    border: none;
+}
+#A:hover {
+    background-color: #d8a276;
+}
+#B{
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ede8e4;
+    border:none;
+}
+#B:hover{
+    background-color: #d8a276;
+}
+footer{
+    height:114px;
+    background-color: #060b1f;
+    padding-top: 20px;
+}
+h3{
+    color:rgb(199, 199, 199) ;
+    margin: 0;
+}
+#help{
+    margin-right: 50px;
+    width: 35px;
+    height: 35px;
+    border-radius: 80px;
+    background: #d89c6c;
+    cursor: pointer;
+}
+.contactos{
+    color:rgb(199, 199, 199) ;
+}
+/*MODAL --------------------------------------------------------------------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+.modal-content {
+    background-color: #060b1f;
+    color: rgb(199, 199, 199);
+    margin: 15% auto;
+    padding: 20px 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    font-family: sans-serif;
+    border: 2px solid #d89c6c;
+    position: relative;
+}
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #d89c6c;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ESTILOS SECCION ----------------------------------------------------------------------------------*/
+
+.nav {
+    background-color: #060b1f;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.nav h1{
+    color: white;
+    text-align: center;
+
+}
+.nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+}
+.nav > div > form > button {
+    background-color: #060b1f;
+    border: none;
+    cursor: pointer;
+}
+.logo{
+    width: 180px;
+    height: 80px;
+}
+.kairos form img{
+    width:60px;
+    height: 80px;
+}
+
+/*--------------------*/
+
+#secciones{
+    background-color: #e3d8d4;
+}
+#secciones h2{
+    margin: 20px;
+}
+.cont-texto h1{
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+.cont-texto p{
+    text-align: center;
+}
+#tituloPrincipal h1{
+    height: 20%;
+    margin: 20px;
+}
+.contenedor-seccion{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 30px;
+    height: 400px;
+    width: 300px;
+}
+.cont-texto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.boton{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius:20px;
+    margin-bottom: 30px;
+    background-color: #d8a276;
+    border:none;
+}
+.boton:hover{
+    background-color: #de9356;
+}
+.cont-img{
+    height: 180px;
+    width: 180px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img img{
+    width: 80%;
+}

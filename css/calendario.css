@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f0f0f0;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.controles {
+    margin: 20px 0;
+    text-align: center;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    background: #060b1f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calendario {
+    display: grid;
+    grid-template-columns: 80px repeat(5, 1fr);
+    border: 1px solid #ddd;
+}
+
+.encabezado {
+    display: contents;
+}
+
+.encabezado .hora-columna, .encabezado .dia {
+    background: #060b1f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+.cuerpo {
+    display: contents;
+}
+
+.hora {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.dia-celda {
+    padding: 10px;
+    min-height: 60px;
+    border: 1px solid #ddd;
+}
+
+.evento {
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+    background: white;
+    margin: 100px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.grupo-form {
+    margin-bottom: 15px;
+}
+
+.grupo-form input, .grupo-form select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+#colorEvento{
+    width: 15%;
+    padding: 1px;
+}
+.cerrar{
+    cursor: pointer;
+}

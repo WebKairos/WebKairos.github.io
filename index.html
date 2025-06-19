@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="./css/estilos.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No + Procrastinacion</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="./img/Kairos.png">
+        <input type="button" value="?" id="help">
+    </header>
+    <div class="padre">
+        <div class="target1">
+            <h2>¿Quieres aprender a aprovechar tu tiempo?</h2>
+            <p>¿Ya sabes que tipo de procrastinador eres y quieres seguir mejornado para aprovechar el tiempo?.</p>
+            <p>Ingresa a la siguiente pagina y elige un modulo de entrenamiento para acceder a tips y consejos, que
+                te ayudaran para administrar tus tareas de la forma mas eficiente posible</p>
+            <a href="seccion.html"><input type="button" id="A" value="A entrenar"></a>
+        </div>
+        <div class="target2">
+            <h2>¿Procrastinas y no sabes por que?</h2>
+            <p>Descubre qué tipo de procrastinador eres con un breve cuestionario, o empieza a entrenar con recursos prácticos para tomar el control de tu tiempo y energía.</p>
+            <p>Cada persona procrastina por distintas razones... ¡Encuentra la tuya y trabaja con ella, no contra ella!</p>
+            <a href="cuestionario.html"><input type="button" id="B" value="Conócete +"></a>
+        </div>
+    </div>
+
+    <!--modal para btn help -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span id="cerrarModalBtn" class="cerrar">&times;</span>
+            <h2>¿De qué trata esta página?</h2>
+            <p>Este sitio fue creado para ayudarte a entender por qué procrastinas, y cómo mejorar tu organización, motivación y manejo del estrés.</p>
+            <p>Haz el test o elige un módulo para comenzar a trabajar en ti mismo/a.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contactos">
+            <h3>Contactanos</h3>
+            <h5>Kairos.web@gmail.com</h5>
+            <h5>Conoce a los devs</h5>
+        </div>
+        
+    </footer>
+    <script src="./js/help.js"></script>
+</body>
+</html>
