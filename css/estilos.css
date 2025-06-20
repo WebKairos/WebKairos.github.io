@@ -140,6 +140,7 @@ body{
 .reto h3{
     text-align: start;
     color: black;
+    margin-top: 10px;
 }
 .reto p{
     text-align: justify;
