@@ -1,0 +1,77 @@
+*, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/img/fondoNosotros.png");
+    height: 650px;
+}
+
+.main > div > img {
+    padding-left: 20px;
+    width: 500px;
+    height: 240px;
+}
+
+.info {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #1b2342;
+    color: aliceblue;
+    border-radius: 15px;
+    border: 5px #d89c6c solid;
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+p {
+    padding: 5px;
+}
+
+.inicio {
+    position: absolute;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #d89c6c;
+    padding: 20px;
+    right: 480px;
+    border-radius: 50px;
+    color:#060b1f;
+    transition: background-color 0.5s;
+}
+
+.inicio:hover {
+    background-color: #d89c6c;
+}
+
+footer {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 30px;
+    height: 170px;
+    background-color: #060b1f;
+    color: aliceblue;
+}
+.contacto {
+    margin-left: 180px;
+}
+.about {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h5 > a {
+    color: #d89c6c;
+    text-decoration: none;
+}
