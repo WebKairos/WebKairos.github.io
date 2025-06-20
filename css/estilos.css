@@ -27,10 +27,7 @@ body{
 
 .titulo1{
     text-align: start;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 0;
+    margin: 20px 50px;
     justify-content: center;
     color: #152540;
 }
@@ -38,6 +35,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 50px;
 }
 
 #calendar{
@@ -55,13 +53,12 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 0 50px;
 }
 
 .panel-izquierda{
-    height: 500px;  
+    height: 500px;
+    width: 370px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -85,7 +82,7 @@ body{
     display: flex;
     flex: 3;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     height: 500px;
     gap: 10px;
 }
@@ -103,7 +100,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3e5375;
+    background: white;
     gap: 20px;
     box-shadow: 2px 2px 5px gray;
 }
@@ -143,7 +140,6 @@ body{
 .reto h3{
     text-align: start;
     color: black;
-    margin-top: 10px;
 }
 .reto p{
     text-align: justify;
@@ -153,10 +149,15 @@ body{
     margin: 10px;
     color: black;
 }
+.tips p{
+    font-size: 14px;
+    margin: 0 20px;
+    font-style: italic;
+}
 .inferior h4{
     text-align: center;
     justify-self: center;
-    margin: 10px;
+    margin: 5px;
 }
 .tips ul{
     gap: 2px;
@@ -183,13 +184,11 @@ body{
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin-left: 50px;
-    margin-right: 60px;
     height: 40px;
-    margin-bottom: 20px;
     border-radius: 20px;
-    background: #00334e;
+    background: #152540;
     box-shadow: 2px 2px 5px gray;
+    position: relative;
 }
 
 .item {
@@ -203,8 +202,9 @@ body{
     cursor: pointer;
 }
 .oculto {
-    position: fixed;
-    bottom: 60px;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
     background: #f1f1f1;
     color: #333;
     padding: 8px 12px;
@@ -219,7 +219,10 @@ body{
 .item:hover .oculto {
     display: block;
 }
-
+#foot{
+    background-color: #060b1f;
+    height: 10px;
+}
 
 /* ESTILOS PRINCIPAL ---------------------------------------------------------------------------- */
 
@@ -320,11 +323,15 @@ h3{
 }
 .contactos{
     color:rgb(199, 199, 199) ;
+    text-align: center;
+}
+
+.linkNosotros{
+    color: rgb(199, 199, 199);
 }
 /*MODAL --------------------------------------------------------------------------- */
 
 .modal {
-    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -400,6 +407,7 @@ h3{
 }
 #secciones h2{
     margin: 20px;
+    margin-left: 70px;
 }
 .cont-texto h1{
     font-size: large;
@@ -462,4 +470,92 @@ h3{
 }
 .cont-img img{
     width: 80%;
+}
+
+/* --------------------------------------------------ESTILOS PAGINA NOSOTROS -----------------------------------------*/
+
+.imgFondoNosotros{
+    position: fixed;
+    z-index: -1;
+    width: 1920px;
+}
+
+.contenedorMain{
+    border: 2px solid #060b1f;
+    border-radius: 12px;
+    box-shadow: 4px 2px 6px #060b1f;
+    margin: 50px;
+    background-color: #e3d8d4;
+}
+
+.divFoto{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorFotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.fotoDev{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid #060b1f;
+}
+
+.nombreDev{
+    font-weight: bolder;
+    color: #060b1f;
+    text-align: center;
+}
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+.contenedorHistoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.marcoLogoNosotros{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #060b1f;
+}
+
+.logoNosotros{
+    width: 50px;
+    height: 50px;
+}
+
+.contenedorTextoHistoria{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.linkInicioNosotros{
+    color: rgb(199, 199, 199);
 }
