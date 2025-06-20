@@ -238,7 +238,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     height: 700px;
-    background-color: #e3d8d4;
+    background-image: url(../img/fondoNosotros.png);
 }
 .encabezado img{
     width: 180px;
