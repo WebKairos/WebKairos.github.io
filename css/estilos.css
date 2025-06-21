@@ -1,8 +1,5 @@
 /* --- PARA TODO ---*/
-/*
-*{
-    outline: 2px dotted black;
-} */
+
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -31,7 +28,7 @@ body{
     font-size: 40px;
     margin: 20px 50px;
     justify-content: center;
-    color: dodgerblue;
+    color: #060b1f;
     -webkit-text-stroke: #152540 1px;
 }
 .container-org nav{
@@ -263,7 +260,7 @@ body{
     width: 500px;
     height: 400px;
     border-radius: 10px;
-    margin-top: 120px;
+    margin-top: 70px;
     padding-left: 50px;
     padding-right: 40px;
     background-color: #060b1f;
@@ -281,7 +278,7 @@ body{
     width: 500px;
     height: 400px;
     border-radius: 10px;
-    margin-top: 120px;
+    margin-top: 70px;
     padding-left: 50px;
     padding-right: 40px;
     background-color: #060b1f;
