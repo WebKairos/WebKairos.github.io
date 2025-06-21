@@ -404,7 +404,7 @@ h3{
 /*--------------------*/
 
 #secciones{
-    background-color: #e3d8d4;
+    background-image: url(../img/fondoNosotros.png);
 }
 #secciones h2{
     margin: 20px;
@@ -438,12 +438,17 @@ h3{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: white;
-    box-shadow: 2px 2px 5px gray;
+    background-color: #e0e0e0;
+    box-shadow: 6px 12px 10px gray;
     border-radius: 30px;
     height: 400px;
     width: 300px;
 }
+
+#tituloSeccion{
+    text-align: center;
+}
+
 .cont-texto{
     display: flex;
     flex-direction: column;
@@ -455,11 +460,11 @@ h3{
     height: 40px;
     border-radius:20px;
     margin-bottom: 30px;
-    background-color: #d8a276;
-    border:none;
+    background-color: white;
+    border: 2px solid dodgerblue;
 }
 .boton:hover{
-    background-color: #de9356;
+    background-color: dodgerblue;
 }
 .cont-img{
     height: 180px;
@@ -471,6 +476,9 @@ h3{
 }
 .cont-img img{
     width: 80%;
+    border-radius: 100%;
+    border-radius: 2px solid white;
+    box-shadow: 12px 12px 12px dodgerblue;
 }
 
 /* --------------------------------------------------ESTILOS PAGINA NOSOTROS -----------------------------------------*/
