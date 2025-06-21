@@ -15,7 +15,7 @@ body{
 /* ESTILOS MÓDULOS ------------------------------------------------------------------------------- */
 
 #organizacion{
-    background-color: #e3d8d4;
+    background-image: url(../img/fondoNosotros.png);
 }
 #volver{
     width: 35px;
@@ -26,10 +26,12 @@ body{
 }
 
 .titulo1{
-    text-align: start;
+    text-align: center;
+    font-size: 40px;
     margin: 20px 50px;
     justify-content: center;
-    color: #152540;
+    color: dodgerblue;
+    -webkit-text-stroke: #152540 1px;
 }
 .container-org nav{
     display: flex;
@@ -62,15 +64,19 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: white;
+    background-color: #e0e0e0;
+    border: 2px solid hsl(0, 0%, 67%);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px goldenrod;
 }
 .panel-izquierda img{
     margin-top: 20px;
     align-self: center;
     margin-bottom: 20px;
     width: 60%;
+    border-radius: 100%;
+    border: 2px solid gray;
+    box-shadow: 6px 6px 18px goldenrod;
 }
 .panel-izquierda p{
     margin-left: 20px;
@@ -100,9 +106,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: #e0e0e0;
+    border: 2px solid hsl(0, 0%, 67%);
     gap: 20px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px goldenrod;
 }
 .superior div img{
     width: 90%;
@@ -118,20 +125,24 @@ body{
     display: flex;
     flex-direction: column;
     flex: 3;
-    background-color: white;
+    background-color: #e0e0e0;
+    border: 2px solid hsl(0, 0%, 67%);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px goldenrod;
 }
 .inferior-superior{
     display: flex;
     flex-direction: row;
     flex: 1;
     height: 700px;
+    margin: 20px;
+    margin-bottom: 0;
 }
 .tips{
     width: 100%;
     height: 100%;
 }
+
 .reto{
     width: 100%;
     height: 100%;
@@ -139,7 +150,7 @@ body{
 }
 .reto h3{
     text-align: start;
-    color: black;
+    color: #152540;
     margin-top: 10px;
 }
 .reto p{
@@ -148,7 +159,7 @@ body{
 .tips h3{
     text-align: start;
     margin: 10px;
-    color: black;
+    color: #152540;
 }
 .tips p{
     font-size: 14px;
@@ -159,6 +170,7 @@ body{
     text-align: center;
     justify-self: center;
     margin: 5px;
+    color: #152540;
 }
 .tips ul{
     gap: 2px;
@@ -172,12 +184,15 @@ body{
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
+    gap: 20px;
+    padding: 0;
 }
 .links ul li a{
-    color: black;
+    color: #152540;
     cursor: pointer;
+    text-decoration: none
 }
 .barra{
     display: flex;
@@ -477,8 +492,8 @@ h3{
 .cont-img img{
     width: 80%;
     border-radius: 100%;
-    border-radius: 2px solid white;
-    box-shadow: 12px 12px 12px dodgerblue;
+    border: 2px solid gray;
+    box-shadow: 12px 12px 12px goldenrod;
 }
 
 /* --------------------------------------------------ESTILOS PAGINA NOSOTROS -----------------------------------------*/
