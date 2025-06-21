@@ -16,7 +16,7 @@
             </form>
         </div>
         <h1>Cuestionario</h1>
-        <button class="btn">?</button>
+        <button id="help" class="btns">?</button>
     </header>
         <div class="encuesta">                                  <!-- Div General -->
             <div class="pregunta">                              <!-- Preguntas -->
@@ -146,6 +146,16 @@
                 </div>
             </div>
         </div>
+            <!--modal para btn help -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span id="cerrarModalBtn" class="cerrar">&times;</span>
+                <h2>¿De qué trata esta página?</h2>
+                <p>Este sitio fue creado para ayudarte a entender por qué procrastinas, y cómo mejorar tu organización, motivación y manejo del estrés.</p>
+                <p>Haz el test o elige un módulo para comenzar a trabajar en ti mismo/a.</p>
+            </div>
+        </div>
         <script src="./js/script.js"></script>
+        <script src="./js/help.js"></script>
     </body>
 </html>

@@ -27,14 +27,14 @@ function mostrarResultadoFinal(destino) {
   botonResultado.style.color = 'white';
   botonResultado.style.border = 'none';
   botonResultado.style.borderRadius = '20px';
-  botonResultado.style.backgroundColor = '#de9356';
+  botonResultado.style.backgroundColor = '#152540e5';
 
   botonResultado.addEventListener('mouseenter', () => {
-    botonResultado.style.backgroundColor = '#cb874fc0';
+    botonResultado.style.backgroundColor = '#152540';
     botonResultado.style.transition = 'background-color 0.2s';
   });
   botonResultado.addEventListener('mouseleave', () => {
-    botonResultado.style.backgroundColor = '#de9356';
+    botonResultado.style.backgroundColor = '#152540e5';
   });
 
   botonResultado.addEventListener('click', () => {
