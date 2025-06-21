@@ -8,27 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('ventanaModal');
     const btnCerrar = document.querySelector('.cerrar');
     
+    //----Controles para editar horas----//
+    const nuevaHoraInicioInput = document.getElementById('nuevaHoraInicio');
+    const nuevaHoraFinInput = document.getElementById('nuevaHoraFin');
+    const btnCambiarHoras = document.getElementById('btnCambiarHoras');
+    
     //----Configurar la hora de inicio----//
-
-    const horaInicio = 8;
-    const horaFin = 20;
+    let horaInicio = 8;
+    let horaFin = 20;
     
     //----Crear el calendario----//
-
     function crearCalendario() {
         cuerpoCal.innerHTML = '';
         
         for (let h = horaInicio; h <= horaFin; h++) {
-
             //----Columnas por horas----//
-
             const horaCelda = document.createElement('div');
             horaCelda.className = 'hora';
             horaCelda.textContent = h + ':00';
             cuerpoCal.appendChild(horaCelda);
             
             //----Celdas por dias----//
-
             for (let d = 1; d <= 5; d++) {
                 const diaCelda = document.createElement('div');
                 diaCelda.className = 'dia-celda';
@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    //----LLenar horas en la ventana----//
-
+    //----LLenar horas en la ventana modal----//
     function llenarHoras() {
         const selectHora = document.getElementById('horaEvento');
         selectHora.innerHTML = '';
@@ -53,16 +52,49 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    //----Agregar el Evento----//
-
+    //----Función para cambiar el horario----//
+    function cambiarHorarioUsuario() {
+        const nuevoInicio = parseInt(nuevaHoraInicioInput.value);
+        const nuevoFin = parseInt(nuevaHoraFinInput.value);
+        
+        //----Mensajes para validar si el numero cuadra o no----//
+        if (isNaN(nuevoInicio) || isNaN(nuevoFin)) {
+            alert('Por favor ingresa números válidos');
+            return;
+        }
+        
+        if (nuevoInicio < 0 || nuevoInicio > 23) {
+            alert('Hora inicio debe estar entre 0 y 23');
+            return;
+        }
+        
+        if (nuevoFin < 1 || nuevoFin > 24) {
+            alert('Hora fin debe estr entre 1 y 24');
+            return;
+        }
+        
+        if (nuevoInicio >= nuevoFin) {
+            alert('La hora de inicio debe ser menor que la hora de fin');
+            return;
+        }
+        
+        //----cambia las variables----//
+        horaInicio = nuevoInicio;
+        horaFin = nuevoFin;
+        
+        //----Regenerar calendario----//
+        crearCalendario();
+        llenarHoras();
+        
+        //----confirmar horarios----//
+        alert(`Horario cambiado a: ${horaInicio}:00 - ${horaFin}:00`);
+    }
+    
+    //----Event Listeners----//
     btnAgregar.addEventListener('click', () => modal.style.display = 'block');
-    
-    //----Cerrar ventana----//
-
     btnCerrar.addEventListener('click', () => modal.style.display = 'none');
+    btnCambiarHoras.addEventListener('click', cambiarHorarioUsuario);
     
-    //----Guardr evento----//
-
     document.getElementById('btnGuardarEvento').addEventListener('click', function() {
         const dia = document.getElementById('diaEvento').value;
         const hora = document.getElementById('horaEvento').value;
@@ -91,8 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('textoEvento').value = '';
     });
     
-    //----Guardar el LocalStorage----//
-
     btnGuardar.addEventListener('click', function() {
         const eventos = [];
         
@@ -114,8 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Calendario guardado');
     });
     
-    //----Cargar el LocalStorage----//
-
     btnCargar.addEventListener('click', function() {
         const datos = localStorage.getItem('calendarioGuardado');
         if (!datos) {
@@ -146,8 +174,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Calendario cargado');
     });
     
-    //----limpiar calendario----//
-
     btnLimpiar.addEventListener('click', function() {
         if (confirm('Borrar todos los eventos?')) {
             document.querySelectorAll('.evento').forEach(e => e.remove());
@@ -157,7 +183,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     //----Iniciar----//
-    
     crearCalendario();
     llenarHoras();
 });

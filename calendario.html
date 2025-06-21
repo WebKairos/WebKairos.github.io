@@ -10,6 +10,12 @@
         <h1>Calendario Lunes-Viernes</h1>
         
         <div class="controles">
+            <div class="control-horas">
+                <input type="number" id="nuevaHoraInicio" min="0" max="23" placeholder="Hora inicio (0-23)" value="8">
+                <input type="number" id="nuevaHoraFin" min="1" max="24" placeholder="Hora fin (0-23)" value="20">
+                <button id="btnCambiarHoras">Aplicar Horario</button>
+            </div>
+            
             <button id="btnAgregar">Agregar Evento</button>
             <button id="btnGuardar">Guardar</button>
             <button id="btnCargar">Cargar</button>
