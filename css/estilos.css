@@ -10,6 +10,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
+    background-image: url(../img/fondoNosotros.png);
 }
 
 /* ESTILOS MÓDULOS ------------------------------------------------------------------------------- */
@@ -21,7 +22,7 @@ body{
     width: 35px;
     height: 35px;
     border-radius: 80px;
-    background: #d89c6c;
+    background: goldenrod;
     cursor: pointer;
 }
 
@@ -252,8 +253,6 @@ body{
 .padre{
     display: flex;
     justify-content: space-evenly;
-    height: 700px;
-    background-image: url(../img/fondoNosotros.png);
 }
 .encabezado img{
     width: 180px;
@@ -306,7 +305,7 @@ body{
     border: none;
 }
 #A:hover {
-    background-color: #d8a276;
+    background-color: dodgerblue;
 }
 #B{
     border-radius: 20px;
@@ -318,7 +317,7 @@ body{
     border:none;
 }
 #B:hover{
-    background-color: #d8a276;
+    background-color: dodgerblue;
 }
 footer{
     height:114px;
@@ -334,7 +333,7 @@ h3{
     width: 35px;
     height: 35px;
     border-radius: 80px;
-    background: #d89c6c;
+    background: goldenrod;
     cursor: pointer;
 }
 .contactos{
@@ -345,6 +344,107 @@ h3{
 .linkNosotros{
     color: rgb(199, 199, 199);
 }
+
+/*----------------------------------------------ESTILOS PARA EL DIV DE LA DESCRIPCION----------------------------------*/
+
+.divDescripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    box-shadow: 4px 4px 16px dodgerblue;
+}
+
+.divTextoDescripcion{
+    margin-top: 20px;
+}
+
+.parrafoDescripcion{
+    margin: 20px 50px;
+    font-size: large;
+    text-align: center;
+}
+
+.divBotonEntrenar{
+    display: flex;
+    margin-bottom: 30px;
+    gap: 100px;
+}
+
+.divSintomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contTextoSintomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    margin: 20px 50px;
+}
+
+.divTextoSintomas{
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTextoSintomas h2{
+    color: #060b1f;
+    text-align: center;
+    font-size: larger;
+}
+
+.divTextoSintomas p{
+    text-align: center;
+    font-size: large;
+}
+
+.contBanner img{
+    height: 250px;
+    width: 90%;
+    object-fit: cover;
+    margin: 20px 50px;
+}
+
+#C{
+    border-radius: 40px;
+    width: 260px;
+    height: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: 2px solid dodgerblue;
+    font-size: x-large;
+}
+#C:hover {
+    background-color: dodgerblue;
+}
+
+#D{
+    border-radius: 40px;
+    width: 260px;
+    height: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: 2px solid dodgerblue;
+    font-size: x-large;
+}
+#D:hover {
+    background-color: dodgerblue;
+}
+
 /*MODAL --------------------------------------------------------------------------- */
 
 .modal {
@@ -367,14 +467,14 @@ h3{
     max-width: 400px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     font-family: sans-serif;
-    border: 2px solid #d89c6c;
+    border: 2px solid goldenrod;
     position: relative;
 }
 .cerrar {
     position: absolute;
     top: 10px;
     right: 15px;
-    color: #d89c6c;
+    color: goldenrod;
     font-size: 1.3rem;
     font-weight: bold;
     cursor: pointer;
@@ -458,10 +558,6 @@ h3{
     border-radius: 30px;
     height: 400px;
     width: 300px;
-}
-
-#tituloSeccion{
-    text-align: center;
 }
 
 .cont-texto{
