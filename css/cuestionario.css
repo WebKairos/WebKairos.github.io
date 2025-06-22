@@ -31,6 +31,11 @@ body {
     border: solid 2px #61b1c1;
 }
 
+#help:hover{
+    background-color: #61b1c1;
+    transition: 0.5s;
+}
+
 .btns{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out, box-shadow 0.1s ease-in-out;

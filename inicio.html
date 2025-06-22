@@ -5,27 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kairos</title>
+    <link rel="icon" href="./img/Icono.png" type="image/png" size="16x16">
 </head>
 <body>
-    <header class="encabezado">
-        <img src="./img/Kairos.png">
+    <header class="nav">
+        <div class="kairos">
+            <form action="index.html">
+                <button>
+                    <img class="logok" src="./img/kairos.png" alt="logoKairos">
+                </button>
+            </form>
+        </div>
         <input type="button" value="?" id="help" class="btns">
     </header>
-    <div class="padre">
-        <div class="target1">
-            <h2>¿Quieres aprender a aprovechar tu tiempo?</h2>
-            <p>¿Ya sabes qué tipo de procrastinador eres y quieres seguir mejoranado para aprovechar el tiempo?</p>
-            <p>Ingresa a la siguiente página y elige un módulo de entrenamiento para acceder a tips y consejos, que
-                te ayudarán a administrar tus tareas de la forma más eficiente posible.</p>
-            <a href="seccion.html"><input type="button" id="A" value="A entrenar" class="btns"></a>
-        </div>
-        <div class="target2">
-            <h2>¿Procrastinas y no sabes por qué?</h2>
-            <p>Descubre qué tipo de procrastinador eres con un breve cuestionario, y empieza a entrenar con recursos prácticos para tomar el control de tu tiempo y energía.</p>
-            <p>Cada persona procrastina por distintas razones... ¡Encuentra la tuya y trabaja con ella, no contra ella!</p>
-            <a href="cuestionario.html"><input type="button" id="B" value="Conócete +" class="btns"></a>
-        </div>
-    </div>
 
     <!--modal para btn help -->
     <div id="infoModal" class="modal">
@@ -57,57 +49,36 @@
                 La procrastinación no es simplemente pereza, sino que a menudo está relacionada con factores como la
                 ansiedad, el perfeccionismo, el miedo al fracaso o la dificultad para manejar emociones negativas. 
             </p>
-            
-            <h1 class="titulo1"> Síntomas </h1>
-            <div class="contTextoSintomas">
-                <div class="divTextoSintomas">
-                    <h2> 1. Falta de planificación </h2>
-                    <p> La procrastinación puede estar relacionada con la falta de organización y planificación,
-                        lo que dificulta la gestión del tiempo y la priorización de tareas.
-                    </p>
-                </div>
-                <div class="divTextoSintomas">
-                    <h2> 2. Estrés y Ansiedad </h2>
-                    <p> La procrastinación puede generar estrés debido a la presión de tener que hacer todo a última hora,
-                        y ansiedad por la preocupación de no cumplir con las expectativas. 
-                    </p>
-                </div>
-                <div class="divTextoSintomas">
-                    <h2> 3. Falta de motivación </h2>
-                    <p> Las personas que procrastinan pueden encontrar difícil iniciar una tarea, incluso si saben que deben
-                        hacerla, y pueden tener problemas para finalizarla, a menudo dejándola inconclusa.
-                    </p>
-                </div>
-                <div class="divTextoSintomas">
-                    <h2> 4. Acumulación de trabajo </h2>
-                    <p> La postergación constante lleva a que las tareas se acumulen, generando una sensación de
-                        abrumación y estrés adicional.
-                    </p>
-                    <h2> 5. Sentimiento de culpa y frustración </h2>
-                    <p> Al no cumplir con las tareas, la persona puede experimentar sentimientos de frustración y
-                        culpa por no haber sido capaz de manejar sus responsabilidades.
-                    </p>
-                    <h2> 6. Distracciones constantes </h2>
-                    <p> Las personas que procrastinan a menudo se distraen fácilmente con otras actividades,
-                        como redes sociales o tareas menos importantes, para evitar enfrentar las tareas pendientes.
-                    </p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="divBotonEntrenar">
-            <a href="seccion.html"><input type="button" id="C" value="A entrenar" class="btns"></a>
-            <a href="cuestionario.html"><input type="button" id="D" value="Conócete +" class="btns"></a>
+    <div class="padre">
+        <div class="target1">
+            <h2>¿Quieres aprender a aprovechar tu tiempo?</h2>
+            <p>¿Ya sabes qué tipo de procrastinador eres y quieres seguir mejoranado para aprovechar el tiempo?</p>
+            <p>Ingresa a la siguiente página y elige un módulo de entrenamiento para acceder a tips y consejos, que
+                te ayudarán a administrar tus tareas de la forma más eficiente posible.</p>
+            <a href="seccion.html"><input type="button" id="A" value="A entrenar" class="btns"></a>
+        </div>
+        <div class="target2">
+            <h2>¿Procrastinas y no sabes por qué?</h2>
+            <p>Descubre qué tipo de procrastinador eres con un breve cuestionario, y empieza a entrenar con recursos prácticos para tomar el control de tu tiempo y energía.</p>
+            <p>Cada persona procrastina por distintas razones... ¡Encuentra la tuya y trabaja con ella, no contra ella!</p>
+            <a href="cuestionario.html"><input type="button" id="B" value="Conócete +" class="btns"></a>
         </div>
     </div>
 
     <footer>
-        <div class="contactos">
+        <div class="contacto">
             <h3>Contactanos</h3>
             <h5>Kairos.contactanos@gmail.com</h5>
-            <h5><a href="nosotros.html" class="linkInicioNosotros"> Conoce a los devs </a></h5>
         </div>
-        
+        <div class="about">
+            <h5><a href="nosotros.html">Conoce a los devs</a></h5>
+            <h5><a href="noticias.html">Próximas Actualizaciones</a></h5>
+        </div>
     </footer>
     <script src="./js/help.js"></script>
 </body>
