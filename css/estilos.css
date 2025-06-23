@@ -343,6 +343,19 @@ h3{
     color:rgb(199, 199, 199) ;
     margin: 0;
 }
+#calendario{
+    margin-right: 10px;
+    width: auto;
+    height: 35px;
+    border-radius: 80px;
+    background: #ffffff;
+    cursor: pointer;
+    border: solid 2px #61b1c1;
+}
+#calendario:hover{
+    background-color: #61b1c1;
+    transition: 0.5s;
+}
 #help{
     margin-right: 50px;
     width: 35px;
