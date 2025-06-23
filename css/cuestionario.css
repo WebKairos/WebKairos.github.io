@@ -48,6 +48,7 @@ body {
 
 .nav > h1 {
     padding-right: 147px;
+    color:white;
 }
 
 .encuesta {
@@ -60,6 +61,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.pregunta h2{
+    background-color: #383e46b9;
+    color: aliceblue;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 .none {
@@ -79,7 +88,7 @@ body {
 }
 
 .respuesta > button {
-    background-color: #6c7a89;
+    background-color: #545d68;
     color: aliceblue;
     border: none;
     border-radius: 20px;

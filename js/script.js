@@ -15,6 +15,7 @@ botones.forEach(btn => {
   });
 });
 
+
 function mostrarResultadoFinal(destino) {
   const botonResultado = document.createElement('button');
   botonResultado.textContent = 'Ver resultado';
@@ -51,7 +52,7 @@ function evaluarResultado() {
   const puntajes = [
     { categoria: 'motivacion', valor: motivacion, url: 'motivacion.html' },
     { categoria: 'organizacion', valor: organizacion, url: 'organizacion.html' },
-    { categoria: 'estres', valor: estres, url: 'estres.html' }
+    { categoria: 'estres', valor: estres, url: 'relajacion.html' }
   ];
 
   puntajes.sort((a, b) => b.valor - a.valor);

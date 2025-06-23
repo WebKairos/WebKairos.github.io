@@ -33,6 +33,3 @@ btns.forEach(boton => {
         boton.classList.remove('active');
     });
 });
-
-
-

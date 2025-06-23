@@ -33,11 +33,16 @@ body{
 
 .titulo1{
     text-align: center;
-    font-size: 40px;
-    margin: 20px 50px;
+    display: flex;
     justify-content: center;
-    color: #060b1f;
-    -webkit-text-stroke: #152540 1px;
+}
+.titulo1 h2{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #383e46b9;
+    color: aliceblue;
+    font-size: 34px;
 }
 .container-org nav{
     display: flex;
@@ -62,9 +67,8 @@ body{
     flex-direction: column;
     flex: 1;
     background-color: #e0e0e0;
-    border: 2px solid hsl(0, 0%, 67%);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px goldenrod;
+    box-shadow: 4px 4px 16px dodgerblue;
 }
 .panel-izquierda img{
     margin-top: 20px;
@@ -72,8 +76,8 @@ body{
     margin-bottom: 20px;
     width: 60%;
     border-radius: 100%;
-    border: 2px solid gray;
-    box-shadow: 6px 6px 18px goldenrod;
+    border: 1px solid goldenrod;
+    box-shadow: 4px 4px 16px dodgerblue;
 }
 .panel-izquierda p{
     margin-left: 20px;
@@ -107,7 +111,7 @@ body{
     background: #e0e0e0;
     border: 2px solid transparent;
     gap: 20px;
-    box-shadow: 2px 2px 5px goldenrod;
+    box-shadow: 2px 2px 5px dodgerblue;
 }
 
 .superior div img{
@@ -126,9 +130,8 @@ body{
     flex-direction: column;
     flex: 3;
     background-color: #e0e0e0;
-    border: 2px solid hsl(0, 0%, 67%);
     border-radius: 20px;
-    box-shadow: 2px 2px 5px goldenrod;
+    box-shadow: 4px 4px 16px dodgerblue;
 }
 .inferior-superior{
     display: flex;
@@ -203,7 +206,7 @@ body{
     height: 40px;
     border-radius: 20px;
     background: #152540e5;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px dodgerblue;
     position: relative;
 }
 
@@ -360,7 +363,6 @@ h3{
     transition: transform 0.2s ease-in-out, box-shadow 0.1s ease-in-out;
 }
 .btns:active{
-    transform: scale(0.98);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3), inset 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -464,29 +466,6 @@ h5 > a {
     margin: 20px 50px;
 }
 
-#C{
-    border-radius: 40px;
-    width: 260px;
-    height: 80px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: white;
-    border: 2px solid #61b1c1;
-    font-size: x-large;
-}
-
-#D{
-    border-radius: 40px;
-    width: 260px;
-    height: 80px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: white;
-    border: 2px solid #61b1c1;
-    font-size: x-large;
-}
-
-
 /*MODAL --------------------------------------------------------------------------- */
 
 .modal {
@@ -501,7 +480,7 @@ h5 > a {
     backdrop-filter: blur(2px);
 }
 .modal-content {
-    background-color: #060b1f;
+    background-color: #060b1fec;
     color: rgb(199, 199, 199);
     margin: 15% auto;
     padding: 20px 25px;
@@ -509,7 +488,6 @@ h5 > a {
     width: 90%;
     max-width: 400px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    font-family: sans-serif;
     border: 2px solid #61b1c1;
     position: relative;
 }
@@ -518,7 +496,7 @@ h5 > a {
     top: 10px;
     right: 15px;
     color: #61b1c1;
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -596,7 +574,7 @@ h5 > a {
     justify-content: center;
     gap: 20px;
     background-color: #e0e0e0;
-    box-shadow: 6px 12px 10px gray;
+    box-shadow: 4px 4px 16px dodgerblue;
     border-radius: 30px;
     height: 400px;
     width: 300px;
@@ -628,8 +606,8 @@ h5 > a {
 .cont-img img{
     width: 80%;
     border-radius: 100%;
-    border: 2px solid gray;
-    box-shadow: 12px 12px 12px goldenrod;
+    border: 1px solid goldenrod;
+    box-shadow: 4px 4px 16px dodgerblue;
 }
 
 /* --------------------------------------------------ESTILOS PAGINA NOSOTROS -----------------------------------------*/
