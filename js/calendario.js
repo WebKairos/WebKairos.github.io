@@ -68,6 +68,16 @@ document.addEventListener('DOMContentLoaded', function() {
             selectHora.appendChild(opcion);
         }
     }
+
+    function alerta(alert){
+        const alertaModal = document.getElementById('alertaModal');
+        const mensajeAlert = document.getElementById('mensajeAlert');
+        mensajeAlert.textContent = alert;
+        alertaModal.style.display = 'block'
+        document.querySelector('.cerrarAlert').addEventListener('click', function(){
+            document.getElementById('alertaModal').style.display = 'none';
+        });
+    }
     
     //----Función para cambiar el horario----//
     function cambiarHorarioUsuario() {
@@ -75,19 +85,19 @@ document.addEventListener('DOMContentLoaded', function() {
         const nuevoFin = parseInt(nuevaHoraFinInput.value);
         
         if (isNaN(nuevoInicio) || isNaN(nuevoFin)) {
-            alert('Por favor ingresa números válidos');
+            alerta('Por favor ingresa números válidos');
             return;
         }
         if (nuevoInicio < 0 || nuevoInicio > 23) {
-            alert('Hora inicio debe estar entre 0 y 23');
+            alerta('Hora inicio debe estar entre 0 y 23');
             return;
         }
         if (nuevoFin < 1 || nuevoFin > 24) {
-            alert('Hora fin debe estar entre 1 y 24');
+            alerta('Hora fin debe estar entre 1 y 24');
             return;
         }
         if (nuevoInicio >= nuevoFin) {
-            alert('La hora de inicio debe ser menor que la hora de fin');
+            alerta('La hora de inicio debe ser menor que la hora de fin');
             return;
         }
 
@@ -108,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
-        alert(`Horario cambiado a: ${horaInicio}:00 - ${horaFin}:00.`);
+        alerta(`Horario cambiado a: ${horaInicio}:00 - ${horaFin}:00.`);
     }
 
     function agregarEventoACelda(celda, texto, color) {
@@ -154,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const color = document.getElementById('colorEvento').value;
         
         if (!texto) {
-            alert('Escribe una descripción');
+            alerta('Escribe una descripción');
             return;
         }
         
@@ -188,13 +198,13 @@ document.addEventListener('DOMContentLoaded', function() {
             horaFin: horaFin
         }));
         
-        alert('Calendario guardado');
+        alerta('Calendario guardado');
     });
     
     btnCargar.addEventListener('click', function() {
         const datos = localStorage.getItem('calendarioGuardado');
         if (!datos) {
-            alert('No hay datos guardados');
+            alerta('No hay datos guardados');
             return;
         }
         
@@ -217,14 +227,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        alert('Calendario cargado');
+        alerta('Calendario cargado');
     });
     
     btnLimpiar.addEventListener('click', function() {
         if (confirm('¿Borrar todos los eventos?')) {
             document.querySelectorAll('.evento').forEach(e => e.remove());
             localStorage.removeItem('calendarioGuardado');
-            alert('Calendario limpiado');
+            alerta('Calendario limpiado');
         }
     });
     
